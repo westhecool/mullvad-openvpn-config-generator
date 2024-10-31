@@ -8,7 +8,7 @@ PROTO = 'udp'
 PORT = '1194'
 if len(sys.argv) > 1:
     PORT = sys.argv[1]
-if PORT == 80 or PORT == 443:
+if PORT == '80' or PORT == '443':
     PROTO = 'tcp'
 COMMON_CONFIG = f'''client
 dev tun
